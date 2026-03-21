@@ -1,7 +1,7 @@
 package banco;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 
 public class Banco {
 	private List<Cuenta> listaCuenta;
@@ -9,11 +9,7 @@ public class Banco {
 	public Banco() {
 		this.listaCuenta =new ArrayList<Cuenta>();
 	}
-	/**
-	 * Recibe como parámetro una referencia a un objeto Cuenta y permite
-	 * adicionar un objeto cuenta a la lista de cuentas.
-	 * @param cuenta
-	 */
+
 	public void agregarCuenta(Cuenta cuenta) {
 		this.listaCuenta.add(cuenta);
 	}
@@ -25,11 +21,7 @@ public class Banco {
 	public void realizarRetiro(long monto,Cuenta cuenta) {
 		cuenta.retiro(monto);
 	}
-	/**
-	 * 
-	 * @param numero
-	 * @return
-	 */
+
 	public Cuenta buscarCuenta(int numero) {
 		for (Cuenta cuenta : listaCuenta) {
 			if(cuenta.getNumero() == numero)

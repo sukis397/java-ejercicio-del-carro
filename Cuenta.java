@@ -39,19 +39,12 @@ public class Cuenta {
 	public String toString() {
 		return "Numero " + this.numero + " Titular " + this.titular + " Saldo " + this.saldo;
 	}
-	/**
-	 * Recibe como parámetro un dato de tipo long y permite sumar el valor al
-	 *	atributo saldo del objeto cuenta
-	 * @param monto
-	 */
+
 	public void deposito(long monto) {
 		this.saldo += monto; 
 	}
 	
-	/**
-	 * Recibe como parámetro un dato de tipo long y permite restar el valor al
-     * atributo saldo del objeto cuenta
-	 */
+
 	
 	public void retiro(long monto) {
 		if(monto > this.saldo )
