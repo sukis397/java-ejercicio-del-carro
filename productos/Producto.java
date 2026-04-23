@@ -12,6 +12,18 @@ public abstract class Producto {
         this.descripcion = descripcion;
         this.precio = precio;
     }
+  
+  public String getCodigo() {
+        return codigo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
 
     
     public abstract double calcularPrecioVenta();
