@@ -18,14 +18,14 @@ public class Empresa {
 
       
         System.out.println("--- DATOS DE PRODUCTOS ---");
-        for (Producto p : inventario) {
-            System.out.println(p.toString());
+        for (Producto productito : inventario) {
+            System.out.println(productito.toString());
         }
 
         
         System.out.println("\n--- LIQUIDACIÓN DE PRECIOS DE VENTA ---");
-        for (Producto p : inventario) {
-            System.out.println(p.toString() + ", Precio Venta: " + p.calcularPrecioVenta());
+        for (Producto productito : inventario) {
+            System.out.println(productito.toString() + ", Precio Venta: " + productito.calcularPrecioVenta());
         }
     }
 }
