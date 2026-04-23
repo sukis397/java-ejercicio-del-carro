@@ -5,7 +5,7 @@ public class Perecedero extends Producto {
 
     
     public Perecedero(String codigo, String descripcion, double precio, int diasACaducar) {
-        super(codigo, descripcion, precio); // Llama al constructor de Producto
+        super(codigo, descripcion, precio); 
         this.diasACaducar = diasACaducar;
     }
 
